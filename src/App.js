@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import Task from './components/task.js';
 import './App.css';
+import count from "./utils/count.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Task name="Timmy"/>
+        <button onClick={count.addCount()}>
+          {count.current()}
+        </button>
     </div>
   );
+
 }
 
 export default App;

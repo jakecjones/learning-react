@@ -8,7 +8,7 @@ function App() {
     <div className="App">
         <Task name="Timmy"/>
         <button onClick={count.addCount()}>
-          {count.current()}
+          {count.currentCount()}
         </button>
     </div>
   );

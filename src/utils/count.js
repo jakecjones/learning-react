@@ -1,5 +1,5 @@
 const count = {
-    current: () => {
+    currentCount: () => {
         return updatedCount;
     },
     addCount: () => {
